@@ -1,4 +1,13 @@
-@import './base/reset';
-@import './base/base';
+// base scss
+@import './helpers/reset';
+@import './helpers/variables';
+@import './helpers/mixin';
+@import './helpers/base';
+@import './utils';
 
-@import './all';
+// layout scss
+@import './layout/footer';
+@import './layout/page';
+
+// pages scss
+@import './pages/p1';
