@@ -1,6 +1,27 @@
----
-title: 腸生態報告Template
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<page size="A4">
+  <%- include('../ejs/logo.ejs') %>
+
+  <div class="d-flex flex-column align-items-center">
+    <div class="mb-5 page-container">
+      <h2 class="guide-title mb-5">個人化腸生態健康管理</h2>
+      <h5 class="content-title mb-3">個人化腸生態健康管理</h5>
+      <p class="mb-5 fw-bold">
+        『腸生態健康評估＋腸生態精準調理』是中天生物科技所提供的腸道全方位健康管理方案。不僅利用最先進的次世代基因定序技術，更搭配中天生技獨有的腸道微生態大數據資料庫進行分析，精準地評估您體內的腸道生態健康。
+        <br /><br />經由解碼您的腸道菌相基因，結合您的血液生化生理檢測數據，透過這些資料，中天生物科技將提供您『個人化腸生態健康管理』策略，整合腸道微生態領域的國際研究成果，搭配本公司所研發的『腸生態精準調理』優質保健產品，長期照護您的身體健康。中天生物科技誠摯地將此產品獻給尊榮的您。
+      </p>
+      <h5 class="content-title mb-3">中天生技獨家技術</h5>
+      <p class="mb-5 fw-bold opacity-1">
+        中天生物科技利用模擬人類腸道菌「厭氧共生發酵技術」及「腸道免疫重建平臺」，獨家研發出多種符合個人腸道生態健康所需的優質保健食品。中天生物科技深信，透過『腸生態精準調理』，一定能有效調理您的腸道微生態。
+      </p>
+    </div>
+
+    <div class="bg-container">
+      <div class="bg-ori bg-p2"></div>
+      <div class="bg-mask"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="page-number">2</div>
+  </footer>
+</page>
