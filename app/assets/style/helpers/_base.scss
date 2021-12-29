@@ -1,7 +1,9 @@
 body {
   background: rgb(204, 204, 204);
 }
-page {
+page,
+.container-A4 {
+  position: relative;
   background: white;
   display: block;
   margin: 0 auto;
@@ -10,9 +12,10 @@ page {
   page-break-after: always;
   page-break-before: always;
 }
-page[size='A4'] {
-  width: 210mm;
-  height: 297mm;
+page[size='A4'],
+.container-A4[size='A4'] {
+  width: $page-size-width;
+  height: $page-size-height;
 }
 page[size='A4'][layout='landscape'] {
   width: 29.7cm;
@@ -34,6 +37,7 @@ page[size='A5'][layout='landscape'] {
   width: 21cm;
   height: 14.8cm;
 }
+
 @media print {
   body,
   page {

@@ -1,19 +1,24 @@
+header {
+  position: relative;
+}
+
 .logo-container {
   position: absolute;
-  top: 10px;
-  right: 0;
+  top: 2px;
+  right: 5px;
   width: 250px;
   height: 50px;
   background-image: url('../../assets/images/header_logo.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 1;
 }
 
 .page-number {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  top: $page-size-height - 30px;
+  right: 20px;
   font-size: 12px;
   color: gray;
 }

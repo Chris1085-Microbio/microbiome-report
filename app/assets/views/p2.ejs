@@ -1,6 +1,14 @@
----
-title: 腸生態報告Template
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<page size="A4">
+  <%- include('../ejs/logo.ejs') %>
+
+  <div class="h-100 d-flex flex-column justify-content-between">
+    <img src="./assets/images/1.jpg" alt="" />
+
+    <h1>我是title</h1>
+    <button type="button" class="btn btn-warning">Warning</button>
+  </div>
+
+  <footer>
+    <div class="page-number">2</div>
+  </footer>
+</page>
