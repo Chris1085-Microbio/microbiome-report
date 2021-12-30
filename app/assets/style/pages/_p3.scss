@@ -1,3 +1,18 @@
 .bg-p3 {
   background-image: url('../../assets/images/2.jpg');
 }
+
+.field {
+  border-bottom: 1px solid #000;
+}
+
+.profile-list {
+  .list-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    span {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+}
