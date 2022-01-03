@@ -15,6 +15,21 @@ header {
   z-index: 1;
 }
 
+.title-logo-container {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background-image: url('../../assets/images/logo-simple.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
 .page-number {
   position: absolute;
   top: $page-size-height - 30px;
