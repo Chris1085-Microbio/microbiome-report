@@ -1,5 +1,6 @@
 $page-size-height: 297mm;
 $page-size-width: 210mm;
 $dark-yellow: rgb(191, 144, 0);
-$title-background-color: rgb(243, 192, 7);
-$title-height: 100px;
+
+$title-height: $page-size-height/8;
+$title-side-height: $page-size-height/80;
