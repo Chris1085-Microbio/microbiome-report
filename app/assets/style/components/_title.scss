@@ -6,7 +6,7 @@
   height: 100%;
   border-style: solid;
   border-width: 0 0 140px 50px;
-  border-color: transparent transparent white transparent;
+  border-color: transparent transparent $page-background-color transparent;
 }
 
 .parallelogram {
@@ -16,7 +16,7 @@
   display: inline-block;
   height: $title-height;
   width: 20px;
-  background-color: white;
+  background-color: $page-background-color;
   color: #333;
   transform: skew(-20deg);
 }
