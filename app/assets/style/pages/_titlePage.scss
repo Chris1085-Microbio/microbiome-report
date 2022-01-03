@@ -1,30 +1,21 @@
-$title-height:$page-size-height/8;
-$title-side-height:$page-size-height/80;
-.TitleboxUpper {
-  background-color: black;
-  margin-top:$page-size-height/2-($title-height/2)-$title-side-height*1.5;
-  height:$title-side-height;
-  position:absolute;
-  width:100%;
+.titleBoxUpper {
+  margin-top: $page-size-height/2-($title-height/2)-$title-side-height * 1.5;
+  height: $title-side-height;
+  position: absolute;
 }
-.Titlebox {
-  background-color: black;
-  margin-top:$page-size-height/2-($title-height/2);
-  height:$title-height;
-  position:absolute;
-  width:100%;
+
+.titleBox {
+  margin-top: $page-size-height/2-($title-height/2);
+  height: $title-height;
+  position: absolute;
 }
-.TitleboxBottom {
-  background-color: black;
-  margin-top:$page-size-height/2+($title-height/2)+$title-side-height*0.5;
-  height:$title-side-height;
-  position:absolute;
-  width:100%;
+.titleBoxBottom {
+  margin-top: $page-size-height/2 + ($title-height/2) + $title-side-height * 0.5;
+  height: $title-side-height;
+  position: absolute;
 }
-.title-page-text{
-  margin-top:7.5%;
-  color: rgb(236, 236, 236);
+
+.title-page-text {
   font-size: 500%;
-  text-align:center;
-  font-weight: bolder;
+  line-height: 180%;
 }
