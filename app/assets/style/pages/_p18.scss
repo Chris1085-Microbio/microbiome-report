@@ -1,0 +1,30 @@
+$title-height:$page-size-height/8;
+$title-side-height:$page-size-height/80;
+.TitleboxUpper {
+  background-color: black;
+  margin-top:$page-size-height/2-($title-height/2)-$title-side-height*1.5;
+  height:$title-side-height;
+  position:absolute;
+  width:100%;
+}
+.Titlebox {
+  background-color: black;
+  margin-top:$page-size-height/2-($title-height/2);
+  height:$title-height;
+  position:absolute;
+  width:100%;
+}
+.TitleboxBottom {
+  background-color: black;
+  margin-top:$page-size-height/2+($title-height/2)+$title-side-height*0.5;
+  height:$title-side-height;
+  position:absolute;
+  width:100%;
+}
+.title-page-text{
+  margin-top:7.5%;
+  color: rgb(236, 236, 236);
+  font-size: 500%;
+  text-align:center;
+  font-weight: bolder;
+}
