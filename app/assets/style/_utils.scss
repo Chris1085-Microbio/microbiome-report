@@ -29,7 +29,7 @@ $spacers: (
 );
 
 /* 使用@each 產出css spacer設定 */
-@each $prop, $abbrev in (margin: m, padding: p) {
+@each $prop, $abbrev in (margin: m, padding: p, letter-spacing: ls) {
   @each $num, $val in $spacers {
     .#{$abbrev}-#{$num} {
       #{$prop}: $val;

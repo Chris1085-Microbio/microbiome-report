@@ -1,0 +1,120 @@
+<page size="A4">
+  <%- include('../ejs/logo.ejs') %>
+
+  <div class="d-flex flex-column h-100 summary">
+    <div class="mt-8 w-100">
+      <div class="col-10 page-title-container mb-3">
+        <div class="page-container">
+          <h2 class="page-title">1.1 腸道分析總覽</h2>
+          <div class="parallelogram mr-8"></div>
+          <div class="parallelogram mr-3"></div>
+          <div class="triangle"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-container">
+      <p class="summary-text mb-2">親愛的客戶您好:<br />在您這次的腸道菌相檢測，結果總覽為:</p>
+
+      <div class="d-flex">
+        <div class="col-5 text-center">
+          <h3 class="summary-title my-2 text-gold">六大核心指數</h3>
+          <ul class="summary-list pt-2 d-flex flex-column">
+            <li class="list-item">微生態多樣性：正常</li>
+            <li class="list-item">好壞菌叢指數：優良</li>
+            <li class="list-item">減糖健康指數：優良</li>
+            <li class="list-item">減糖健康指數：<span class="text-danger">偏低</span></li>
+            <li class="list-item">免疫平衡指數：正常</li>
+            <li class="list-item">腸道功能指數：<span class="text-danger">偏低</span></li>
+          </ul>
+
+          <ul class="summaryScore-container w-100">
+            <li class="list-item d-flex w-100 justify-content-center">
+              <div class="commit text-end col-4">1-30分</div>
+              <div class="colorBox col-4 ml-2 text-center">偏低</div>
+            </li>
+            <li class="list-item d-flex w-100 justify-content-center">
+              <div class="commit text-end col-4">31-80分</div>
+              <div class="colorBox col-4 ml-2 text-center">正常</div>
+            </li>
+            <li class="list-item d-flex w-100 justify-content-center">
+              <div class="commit text-end col-4">81-100分</div>
+              <div class="colorBox col-4 ml-2 text-center">優良</div>
+            </li>
+          </ul>
+
+          <p class="text-start mt-4">
+            <span class="fw-bold">溫馨小提醒:</span><br />
+            近年研究發現腸道菌群與疾病密切相關。服用中天生物科技的『腸生態精準調理』，可調整腸道菌群，有益腸道健康。
+          </p>
+          <img src="./assets/images/6.png" alt="" class="summaryNoti-img" />
+        </div>
+
+        <div class="col-7 text-center">
+          <h3 class="summary-title my-2 text-gold">身體功能評估</h3>
+          <ul class="summary-list pt-2 d-flex flex-column align-items-center">
+            <li class="list-item d-flex">
+              <div class="col-8">腦功能健康風險：</div>
+              <div class="col-4 text-start">低度風險</div>
+            </li>
+            <li class="list-item d-flex">
+              <div class="col-8">心血管功能健康風險：</div>
+              <div class="col-4 text-start"><span class="text-danger">高度風險</span></div>
+            </li>
+            <li class="list-item d-flex">
+              <div class="col-8">肺功能健康風險：</div>
+              <div class="col-4 text-start">中度風險</div>
+            </li>
+            <li class="list-item d-flex">
+              <div class="col-8">肝功能健康風險：</div>
+              <div class="col-4 text-start">中度風險</div>
+            </li>
+            <li class="list-item d-flex">
+              <div class="col-8">腎功能健康風險：</div>
+              <div class="col-4 text-start">中度風險</div>
+            </li>
+            <li class="list-item d-flex">
+              <div class="col-8">胃功能健康風險：</div>
+              <div class="col-4 text-start">中度風險</div>
+            </li>
+            <li class="list-item d-flex">
+              <div class="col-8">腸功能健康風險：</div>
+              <div class="col-4 text-start"><span class="text-danger">高度風險</span></div>
+            </li>
+            <li class="list-item d-flex">
+              <div class="col-8">免疫功能健康風險：</div>
+              <div class="col-4 text-start">中度風險</div>
+            </li>
+            <li class="list-item d-flex">
+              <div class="col-8">肥胖健康風險：</div>
+              <div class="col-4 text-start">中度風險</div>
+            </li>
+            <li class="list-item d-flex">
+              <div class="col-8">代謝功能健康風險：</div>
+              <div class="col-4 text-start">中度風險</div>
+            </li>
+          </ul>
+
+          <ul class="summaryScore-container w-100 ml-2">
+            <li class="list-item d-flex w-100 justify-content-center">
+              <div class="commit text-end col-4">1-3分</div>
+              <div class="colorBox col-4 ml-2 text-center">高度風險</div>
+            </li>
+            <li class="list-item d-flex w-100 justify-content-center">
+              <div class="commit text-end col-4">4-7分</div>
+              <div class="colorBox col-4 ml-2 text-center">中度風險</div>
+            </li>
+            <li class="list-item d-flex w-100 justify-content-center">
+              <div class="commit text-end col-4">8-10分</div>
+              <div class="colorBox col-4 ml-2 text-center">低度風險</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="page-number">6</div>
+  </footer>
+</page>
