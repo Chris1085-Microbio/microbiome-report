@@ -1,0 +1,16 @@
+.bg-p7 {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url('../../assets/images/7.png') no-repeat;
+    background-size: cover;
+    z-index: 0;
+    opacity: 0.7;
+  }
+}

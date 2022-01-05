@@ -36,4 +36,22 @@ header {
   right: 20px;
   font-size: 12px;
   color: gray;
+  z-index: 1;
+}
+
+.page-container {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
+  z-index: 1;
+  width: 100%;
+}
+
+.page-title-container {
+  position: relative;
+  background-color: $title-background-color;
+}
+
+.page-title {
+  line-height: 100px;
 }

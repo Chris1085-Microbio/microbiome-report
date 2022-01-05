@@ -1,6 +1,12 @@
 body {
   background: rgb(204, 204, 204);
+  font-family: 'Noto Sans TC', sans-serif;
 }
+
+header {
+  position: relative;
+}
+
 page,
 .container-A4 {
   position: relative;
@@ -65,16 +71,28 @@ h3 {
   line-height: 50px;
 }
 
+h4 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
 h5 {
   font-size: 32px;
   line-height: 40px;
   letter-spacing: 5px;
 }
 
+h6 {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
 p {
   font-size: 20px;
   line-height: 32px;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
 }
 
 .fw-bold {
