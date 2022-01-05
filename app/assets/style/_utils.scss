@@ -28,8 +28,46 @@ $spacers: (
   )
 );
 
+$ls-spacer: 0.5rem;
+$ls-spacers: (
+  0: 0,
+  1: (
+    $ls-spacer * 0.25
+  ),
+  2: (
+    $ls-spacer * 0.5
+  ),
+  3: (
+    $ls-spacer * 0.75
+  ),
+  4: $ls-spacer,
+  5: (
+    $ls-spacer * 1.25
+  ),
+  6: (
+    $ls-spacer * 1.5
+  ),
+  7: (
+    $ls-spacer * 1.75
+  ),
+  8: (
+    $ls-spacer * 2.25
+  ),
+  9: (
+    $ls-spacer * 0.9375
+  )
+);
 /* 使用@each 產出css spacer設定 */
-@each $prop, $abbrev in (margin: m, padding: p, letter-spacing: ls) {
+@each $prop, $abbrev in (letter-spacing: ls) {
+  @each $num, $val in $ls-spacers {
+    .#{$abbrev}-#{$num} {
+      #{$prop}: $val;
+    }
+  }
+}
+
+/* 使用@each 產出css spacer設定 */
+@each $prop, $abbrev in (margin: m, padding: p) {
   @each $num, $val in $spacers {
     .#{$abbrev}-#{$num} {
       #{$prop}: $val;
@@ -89,6 +127,10 @@ $spacers: (
 
 .text-yellow {
   color: $yellow;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .bg-black {
