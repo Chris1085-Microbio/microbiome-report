@@ -35,6 +35,16 @@ header {
 .page-title-container {
   position: relative;
   background-color: $title-background-color;
+  padding-left: 40px;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: -37px;
+    content: '';
+    border-top: 100px solid $title-background-color;
+    border-right: 37px solid transparent;
+  }
 }
 
 .page-title {

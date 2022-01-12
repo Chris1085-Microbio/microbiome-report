@@ -131,8 +131,17 @@ $ls-spacers: (
 
 .text-justify {
   text-align: justify;
+  text-align-last: justify;
 }
 
 .bg-black {
   background-color: black;
+}
+
+.text-indent {
+  text-indent: 3rem;
+}
+
+.zi-1 {
+  z-index: 1;
 }

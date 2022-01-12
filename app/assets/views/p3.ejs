@@ -2,80 +2,76 @@
   <%- include('../ejs/logo.ejs') %>
 
   <div class="d-flex flex-column align-items-center h-100">
-    <div class="mt-8 w-100">
-      <div class="col-10 page-title-container mb-5">
-        <div class="page-container">
-          <h2 class="page-title">客戶訊息</h2>
-          <div class="parallelogram mr-8"></div>
-          <div class="parallelogram mr-3"></div>
-          <div class="triangle"></div>
+    <div class="mt-8 w-100 customer-title">
+      <div class="col-9 page-title-container mb-5">
+        <h2 class="page-title">客戶訊息</h2>
+        <div class="parallelogram mr-0"></div>
+        <div class="parallelogram mr-5"></div>
+      </div>
+    </div>
+    <div class="d-flex w-100 justify-content-between profile-page">
+      <div class="profile-container d-flex justify-content-between">
+        <div class="user_profile col-5 pr-2">
+          <h3 class="mb-4"><i class="far fa-id-card mr-1"></i>個人資料</h3>
+          <ul class="profile-list">
+            <li class="list-item d-flex justify-content-between">
+              <span class="col-6 text-justify">姓名</span>
+              <span class="field col-6"></span>
+            </li>
+            <li class="list-item d-flex justify-content-between">
+              <span class="col-6 text-justify">年齡</span>
+              <span class="field col-6"></span>
+            </li>
+            <li class="list-item d-flex justify-content-between">
+              <span class="col-6 text-justify">性別</span>
+              <span class="field col-6"></span>
+            </li>
+            <li class="list-item d-flex justify-content-between">
+              <span class="col-6 text-justify">身分證字號</span>
+              <span class="field col-6"></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sample_profile col-7 pl-2 mb-4">
+          <h3 class="mb-4"><i class="fas fa-info-circle mr-1"></i>檢測資料</h3>
+          <ul class="profile-list">
+            <li class="list-item d-flex justify-content-between">
+              <span class="col-4 text-justify">採檢日期</span>
+              <span class="field col-8"></span>
+            </li>
+            <li class="list-item d-flex justify-content-between">
+              <span class="col-4 text-justify">收檢日期</span>
+              <span class="field col-8"></span>
+            </li>
+            <li class="list-item d-flex justify-content-between">
+              <span class="col-4 text-justify">報告日期</span>
+              <span class="field col-8"></span>
+            </li>
+            <li class="list-item d-flex justify-content-between">
+              <span class="col-4 text-justify">檢體編號</span>
+              <span class="field col-8"></span>
+            </li>
+            <li class="list-item d-flex justify-content-between">
+              <span class="col-4 text-justify">送檢單位</span>
+              <span class="field col-8"></span>
+            </li>
+            <li class="list-item d-flex justify-content-between">
+              <span class="col-4 text-justify">檢測項目</span>
+              <span class="field col-8"></span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="page-container d-flex w-100 justify-content-between">
-      <div class="user_profile col-5 px-2">
-        <h3 class="mb-4">個人資料</h3>
-        <ul class="profile-list">
-          <li class="list-item d-flex justify-content-between">
-            <span class="col-5">姓名</span>
-            <span class="field col-7"></span>
-          </li>
-          <li class="list-item d-flex justify-content-between">
-            <span class="col-5">年齡</span>
-            <span class="field col-7"></span>
-          </li>
-          <li class="list-item d-flex justify-content-between">
-            <span class="col-5">性別</span>
-            <span class="field col-7"></span>
-          </li>
-          <li class="list-item d-flex justify-content-between">
-            <span class="col-5">身分證字號</span>
-            <span class="field col-7"></span>
-          </li>
-        </ul>
-      </div>
 
-      <div class="sample_profile col-7 px-2 mb-4">
-        <h3 class="mb-4">檢測資料</h3>
-        <ul class="profile-list">
-          <li class="list-item d-flex justify-content-between">
-            <span class="col-3">採檢日期</span>
-            <span class="field col-9"></span>
-          </li>
-          <li class="list-item d-flex justify-content-between">
-            <span class="col-3">收檢日期</span>
-            <span class="field col-9"></span>
-          </li>
-          <li class="list-item d-flex justify-content-between">
-            <span class="col-3">報告日期</span>
-            <span class="field col-9"></span>
-          </li>
-          <li class="list-item d-flex justify-content-between">
-            <span class="col-3">檢體編號</span>
-            <span class="field col-9"></span>
-          </li>
-          <li class="list-item d-flex justify-content-between">
-            <span class="col-3">送檢單位</span>
-            <span class="field col-9"></span>
-          </li>
-          <li class="list-item d-flex justify-content-between">
-            <span class="col-3">檢測項目</span>
-            <span class="field col-9"></span>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="page-container">
+    <div class="page-container profile-text-container">
       <h3 class="mb-4 text-gold text-start mb-3">致顧客的話</h3>
-      <p class="fw-bold">
-        一直以來，中天生物科技深信〝萬病歸脾土，醫病先醫腸〞。我們不斷秉直著治療疾病須先從腸道著手，並透過調整、優化改善腸道微生態，帶給人們更健康的身體。因此利用這項『個人化腸生態健康管理』策略，我們希望幫助因為所處環境、飲食及生活習慣的不同，而有著截然差異的每個人，都能找出一個最適合自己的營養管理方針。透過閱讀「腸生態健康評估」，您可以清楚了解現階段身體的狀況，讓我們幫您找出最適合的產品；而每日早晚服用「腸生態精準調理」，可以幫助您改善及穩定您的腸道環境，讓身體維持在最佳的狀態。
+      <p class="fw-bold text-indent">
+        一直以來，中天生物科技深信腸道主宰了人的健康與生命，。所以我們不斷秉持著治療疾病須先從腸道著手，並透過調整、優化改善腸道微生態，帶給人們更健康的身體。也因所處環境、飲食及生活習慣的不同，每個人的腸道有著截然不同的差異，因此利用『個人化腸生態健康管理』策略，希望幫助每個人找出一個最適合自己的營養管理方針。透過閱讀「腸生態健康評估」，您可以清楚了解現階段身體的狀況，讓我們幫您找出最適合的產品；而每日早晚服用「腸生態精準調理」，可以幫助您改善及穩定您的腸道環境，讓身體維持在最佳的狀態。
       </p>
-      <p class="fw-bold">
-        近幾年來的國際文獻均指出，腸道菌與許多疾病有著高度的關聯性，因此定期的檢測腸道菌相變化，並透過中天生物科技所研發的<span
-          class="text-gold"
-          >〝中天BS腸生態〞來協助調整您的腸道微生態，並使腸道益菌生長及丁酸增加，更能有效降低您的空腹血糖，</span
-        >使您的身體常保青春活力。
+      <p class="fw-bold text-indent">
+        中天生物科技提醒您，如果有感到任何不適的狀況，請諮詢專科醫師做進一步詳細的檢測。腸道微生態環境是動態變化，本評估僅能呈現您檢測當下，腸道微生態及相關功能風險，無法判斷您是否確實罹患疾病，若有疑慮仍需諮詢專科醫師進行詳細檢查。
       </p>
     </div>
 
