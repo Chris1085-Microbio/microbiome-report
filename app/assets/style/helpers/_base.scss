@@ -69,24 +69,36 @@ h3 {
   font-size: 40px;
   font-weight: bold;
   line-height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
 }
 
 h4 {
   font-size: 36px;
   font-weight: bold;
   line-height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
 }
 
 h5 {
   font-size: 32px;
   line-height: 40px;
   letter-spacing: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
 }
 
 h6 {
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
 }
 
 p {
@@ -94,6 +106,20 @@ p {
   line-height: 32px;
   letter-spacing: 4px;
   text-align: justify;
+  color: #555555;
+}
+
+ul,
+ol {
+  color: #555555;
+
+  li {
+    color: #555555;
+  }
+}
+
+table {
+  color: #555555;
 }
 
 .fw-bold {
