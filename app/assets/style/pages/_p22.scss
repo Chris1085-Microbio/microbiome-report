@@ -1,0 +1,80 @@
+.functionFigure {
+  width: 200px;
+  height: 60px;
+}
+
+.riskImg {
+  height: 100px;
+  width: 40px;
+}
+
+.risk-container {
+  .indexBtn-container {
+    font-size: 2rem;
+
+    .indexBtn {
+      line-height: 3rem;
+    }
+  }
+}
+
+.goodBacteriaList,
+.badBacteriaList {
+  .list-item {
+    height: 115px;
+    position: relative;
+
+    span {
+      line-height: 1.5rem;
+    }
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+
+.goodBacteriaList {
+  .list-item {
+    border-bottom: 3px solid $light-yellow;
+    .bacteriaScore-container {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: $light-yellow;
+      color: black;
+      border: 3px solid black;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 50px;
+      transform: rotate(-30deg);
+    }
+  }
+}
+
+.badBacteriaList {
+  .list-item {
+    border-bottom: 3px solid #555555;
+
+    .bacteriaScore-container {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #bfbfbf;
+      color: black;
+      border: 3px solid black;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 50px;
+      transform: rotate(-30deg);
+    }
+  }
+}

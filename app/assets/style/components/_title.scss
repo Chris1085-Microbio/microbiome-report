@@ -1,0 +1,108 @@
+.triangle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  border-style: solid;
+  border-width: 0 0 140px 50px;
+  border-color: transparent transparent $page-background-color transparent;
+}
+
+.parallelogram {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  display: inline-block;
+  height: $title-height - 50px;
+  width: 12px;
+  background-color: $page-background-color;
+  color: #333;
+  transform: skew(-20deg);
+  z-index: 2;
+}
+
+.pageSubtitle {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $light-yellow;
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 29px 0 29px 25px;
+    border-color: transparent transparent transparent $light-yellow;
+  }
+}
+
+.badBacteriaTitle {
+  width: 300px;
+  position: relative;
+  font-size: 1.8rem;
+  letter-spacing: 30px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #bfbfbf;
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 29px 0 29px 25px;
+    border-color: transparent transparent transparent #bfbfbf;
+  }
+}
+
+.goodBacteriaTitle {
+  width: 300px;
+  position: relative;
+  font-size: 1.8rem;
+  letter-spacing: 30px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $light-yellow;
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 29px 25px 29px 0;
+    border-color: transparent $light-yellow transparent transparent;
+  }
+}

@@ -1,0 +1,21 @@
+.titleBoxUpper {
+  margin-top: $page-size-height/2-($title-height/2)-$title-side-height * 1.5;
+  height: $title-side-height;
+  position: absolute;
+}
+
+.titleBox {
+  margin-top: $page-size-height/2-($title-height/2);
+  height: $title-height;
+  position: absolute;
+}
+.titleBoxBottom {
+  margin-top: $page-size-height/2 + ($title-height/2) + $title-side-height * 0.5;
+  height: $title-side-height;
+  position: absolute;
+}
+
+.title-page-text {
+  font-size: 500%;
+  line-height: 150%;
+}
