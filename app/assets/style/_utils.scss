@@ -109,7 +109,7 @@ $ls-spacers: (
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(236, 236, 236, 0.8));
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8));
   }
 
   .bg-ori {
@@ -133,6 +133,33 @@ $ls-spacers: (
   text-align: justify;
 }
 
+.text-last-justify {
+  text-align: justify;
+  text-align-last: justify;
+}
+
 .bg-black {
   background-color: black;
+}
+
+.text-indent {
+  text-indent: 3rem;
+}
+
+.zi-1 {
+  z-index: 1;
+}
+
+.border-red {
+  border: 2px solid #ff5d5d;
+}
+.border-orange {
+  border: 2px solid #ffd966;
+}
+.border-green {
+  border: 2px solid #92d050;
+}
+
+.bg-red {
+  background-color: #ff5d5d !important;
 }

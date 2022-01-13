@@ -1,5 +1,8 @@
-.category-title {
-  font-size: 2rem;
+.category-left,
+.category-right {
+  .category-title {
+    font-size: 2rem;
+  }
 }
 
 .category-list {
@@ -10,4 +13,20 @@
     margin-left: 2rem;
     font-weight: bold;
   }
+}
+
+.bg-p4-container {
+  z-index: 0;
+
+  .bg-mask {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1));
+  }
+
+  .bg-p4 {
+    background-image: url('../../assets/images/4.png');
+  }
+}
+
+.p4-container {
+  z-index: 10;
 }

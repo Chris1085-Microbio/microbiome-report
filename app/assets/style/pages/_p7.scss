@@ -1,5 +1,12 @@
-.bg-p7 {
-  position: relative;
+.healthGuide-container {
+  position: absolute;
+  top: 9rem;
+  left: 40px;
+  right: 40px;
+  height: 80%;
+  border: 6px double #000;
+  padding: 20px;
+  z-index: 0;
 
   &::before {
     content: '';
