@@ -1,0 +1,112 @@
+<page size="A4">
+  <%- include('../ejs/logo.ejs') %>
+
+  <div class="d-flex flex-column align-items-center">
+    <div class="mt-8 w-100">
+      <div class="col-12 page-title-container mb-5">
+        <h3 class="page-title">4.6 胃功能健康指數</h3>
+        <div class="parallelogram mr-2"></div>
+        <div class="parallelogram mr-5"></div>
+      </div>
+    </div>
+
+    <div class="page-container">
+      <div class="risk-container d-flex justify-content-around">
+        <div class="indexBtn-container p-1">
+          <div class="indexBtn text-center p-2 bg-white fw-bold">
+            <span>5 分</span>
+            <span class="d-block">中度風險</span>
+          </div>
+        </div>
+
+        <div class="riskImg-container d-flex align-items-center">
+          <img src="./assets/images/medium.png" alt="" class="riskImg mx-1" />
+          <img src="./assets/images/medium.png" alt="" class="riskImg mx-1" />
+          <img src="./assets/images/medium.png" alt="" class="riskImg mx-1" />
+          <img src="./assets/images/medium.png" alt="" class="riskImg mx-1" />
+          <img src="./assets/images/medium.png" alt="" class="riskImg mx-1" />
+          <img src="./assets/images/normal.png" alt="" class="riskImg mx-1" />
+          <img src="./assets/images/normal.png" alt="" class="riskImg mx-1" />
+          <img src="./assets/images/normal.png" alt="" class="riskImg mx-1" />
+          <img src="./assets/images/normal.png" alt="" class="riskImg mx-1" />
+          <img src="./assets/images/normal.png" alt="" class="riskImg mx-1" />
+        </div>
+      </div>
+      <div class="w-100 d-flex justify-content-end mt-2">
+        <img src="./assets/images/22.png" alt="" class="functionFigure" />
+      </div>
+      <h4 class="py-1 px-2 pageSubtitle"><i class="far fa-hand-point-right mr-1"></i>風險說明</h4>
+      <p class="text-indent mt-4">
+        腸道與胃的主要功能是消化及營養吸收。腸道菌叢失衡時，壞菌藉由其代謝物影響胃部及腸道消化酶的功能，導致胃部粘膜受損及發炎，引起腸胃不適。
+      </p>
+      <p class="text-indent fw-bold text-dark">相關疾病為:胃炎、胃潰瘍、胃癌等。</p>
+
+      <div class="bacteria-container mt-4 d-flex flex-column">
+        <div class="bacteriaTitle-container d-flex justify-content-center">
+          <h4 class="py-1 pr-2 pl-6 goodBacteriaTitle text-center">關鍵好菌</h4>
+          <h4 class="py-1 pr-2 pl-6 badBacteriaTitle text-center">關鍵壞菌</h4>
+        </div>
+
+        <div class="bacteriaList-container d-flex justify-content-between">
+          <ul class="goodBacteriaList col-6 p-2 mt-3">
+            <li class="list-item text-end">
+              <span class="d-block">雙叉桿菌屬 </span>
+              <span class="d-block font-italic">(Bifidobacterium) </span>
+              <span class="d-block">促進調節性T細胞功能、腸道免疫平衡與減少脂肪堆積。 </span>
+
+              <div class="bacteriaScore-container text-center">
+                <span class="bacteriaScore">一般</span>
+              </div>
+            </li>
+            <li class="list-item text-end">
+              <span class="d-block">顫桿菌克屬 </span>
+              <span class="d-block font-italic">(Oscillibacter) </span>
+              <span class="d-block">增強腸粘膜屏障功能。 </span>
+              <div class="bacteriaScore-container text-center">
+                <span class="bacteriaScore">一般</span>
+              </div>
+            </li>
+            <li class="list-item text-end">
+              <span class="d-block">毛螺菌科 </span>
+              <span class="d-block font-italic">(Lachnoclostridium) </span>
+              <span class="d-block">促進短鏈脂肪酸生成、提供腸道細胞能量，抑制壞菌。 </span>
+              <div class="bacteriaScore-container text-center">
+                <span class="bacteriaScore">一般</span>
+              </div>
+            </li>
+          </ul>
+          <ul class="badBacteriaList col-6 p-2 mt-3">
+            <li class="list-item text-start">
+              <span class="d-block">幽門螺桿菌 </span>
+              <span class="d-block font-italic">(Helicobacter pylori) </span>
+              <span class="d-block">胃潰瘍、胃癌致病菌，使胃壁發炎、潰瘍與癌化。 </span>
+              <div class="bacteriaScore-container text-center">
+                <span class="bacteriaScore">一般</span>
+              </div>
+            </li>
+            <li class="list-item text-start">
+              <span class="d-block">胃消化鏈球菌 </span>
+              <span class="d-block font-italic">(Peptostreptococcus stomatis) </span>
+              <span class="d-block">導致粘膜發炎關鍵壞菌。 </span>
+              <div class="bacteriaScore-container text-center">
+                <span class="bacteriaScore">一般</span>
+              </div>
+            </li>
+            <li class="list-item text-start">
+              <span class="d-block">混濁戴阿利斯特菌 </span>
+              <span class="d-block font-italic">(Dialister pneumosintes) </span>
+              <span class="d-block">胃炎與胃癌上升指標菌，造成黏膜發炎。 </span>
+              <div class="bacteriaScore-container text-center">
+                <span class="bacteriaScore">一般</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="page-number">27</div>
+  </footer>
+</page>
