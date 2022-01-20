@@ -1,0 +1,47 @@
+.table-container {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+}
+
+.bloodTest {
+  tbody {
+    tr {
+      td {
+        border-bottom: 1px solid #000;
+      }
+    }
+
+    tr:nth-child(1),
+    tr:nth-child(5),
+    tr:nth-child(7),
+    tr:nth-child(10),
+    tr:nth-child(13) {
+      td:first-child {
+        line-height: 2rem;
+        vertical-align: middle;
+        border-bottom: none;
+      }
+    }
+
+    tr:nth-child(9),
+    tr:nth-child(12) {
+      border-bottom: 1px solid #000;
+    }
+  }
+}
+
+.bloodTest-2 {
+  tbody {
+    tr:nth-child(1) {
+      td:first-child {
+        line-height: 2rem;
+        vertical-align: middle;
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.table-bordered {
+  border: 1px solid #000;
+}
