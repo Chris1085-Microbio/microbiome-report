@@ -1,5 +1,6 @@
 .fb-table {
   width: 100%;
+  border: 1px solid #000;
 
   th,
   td {
@@ -10,13 +11,24 @@
   th {
     background-color: black;
     color: white;
-    border: 3px solid white;
   }
 }
 
-.commentTitle_ud {
-  border-bottom: 2px solid #000;
-  font-size: 1.8rem;
-  line-height: 2.6rem;
-  font-weight: bold;
+.comment-container {
+  position: relative;
+  padding-top: 1.5rem !important;
+  border: 5px double #000;
+  border-radius: 10px;
+
+  .commentTitle {
+    display: block;
+    position: absolute;
+    top: -1.7rem;
+    left: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-indent: 0;
+    background-color: white;
+  }
 }
