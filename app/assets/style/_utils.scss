@@ -99,7 +99,7 @@ $ls-spacers: (
   width: 100%;
   height: 450px;
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   z-index: 0;
 
@@ -143,7 +143,7 @@ $ls-spacers: (
 }
 
 .text-indent {
-  text-indent: 3rem;
+  text-indent: 2.2rem;
 }
 
 .zi-1 {
@@ -162,4 +162,12 @@ $ls-spacers: (
 
 .bg-red {
   background-color: #ff5d5d !important;
+}
+
+.text-red {
+  color: #ff5d5d;
+}
+
+.font-italic {
+  font-style: italic;
 }

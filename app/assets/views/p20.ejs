@@ -1,14 +1,119 @@
 <page size="A4">
   <%- include('../ejs/logo.ejs') %>
 
-  <div class="d-flex flex-column align-items-center h-100">
-    <div class="bg-container">
-      <div class="bg-ori bg-p3"></div>
-      <div class="bg-mask"></div>
+  <div class="d-flex flex-column align-items-center">
+    <div class="mt-8 w-100">
+      <div class="col-12 page-title-container mb-5">
+        <h2 class="page-title">3. 血液生化檢驗</h2>
+        <div class="parallelogram mr-2"></div>
+        <div class="parallelogram mr-5"></div>
+      </div>
+    </div>
+
+    <div class="page-container">
+      <h4 class="py-1 px-2 pageSubtitle"><i class="fas fa-table mr-1"></i>菌相分析 V.S. 生化指數</h4>
+      <table class="bloodTest-2 table table-bordered border-dark mt-4">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col" class="text-center">相關風險項目</th>
+            <th scope="col" class="text-center">檢測項目</th>
+            <th scope="col" class="text-center">結果</th>
+            <th scope="col" class="text-center">參考值</th>
+            <th scope="col" class="text-center">單位</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="14" class="text-center">免疫功能</td>
+            <td>淋巴細胞%</td>
+            <td class="text-center">-</td>
+            <td class="text-center">20-50</td>
+            <td class="text-center">%</td>
+          </tr>
+          <tr>
+            <td>嗜酸粒細胞%</td>
+            <td class="text-center">-</td>
+            <td class="text-center">0.40-8.00</td>
+            <td class="text-center">%</td>
+          </tr>
+          <tr>
+            <td>嗜堿粒細胞%</td>
+            <td class="text-center">-</td>
+            <td class="text-center">0.00-1.00</td>
+            <td class="text-center">%</td>
+          </tr>
+          <tr>
+            <td>中性粒細胞%</td>
+            <td class="text-center">-</td>
+            <td class="text-center">1.80-6.30</td>
+            <td class="text-center">%</td>
+          </tr>
+          <tr>
+            <td>單核細胞#</td>
+            <td class="text-center">-</td>
+            <td class="text-center">0.10-0.60</td>
+            <td class="text-center">*10^9/L</td>
+          </tr>
+          <tr>
+            <td>淋巴細胞#</td>
+            <td class="text-center">-</td>
+            <td class="text-center">1.10-3.20</td>
+            <td class="text-center">*10^9/L</td>
+          </tr>
+          <tr>
+            <td>嗜酸粒細胞#</td>
+            <td class="text-center">-</td>
+            <td class="text-center">0.02-0.52</td>
+            <td class="text-center">*10^9/L</td>
+          </tr>
+          <tr>
+            <td>嗜堿粒細胞#</td>
+            <td class="text-center">-</td>
+            <td class="text-center">0.00-0.06</td>
+            <td class="text-center">*10^9/L</td>
+          </tr>
+          <tr>
+            <td>RDW-SD</td>
+            <td class="text-center">-</td>
+            <td class="text-center">33-58</td>
+            <td class="text-center">fL</td>
+          </tr>
+          <tr>
+            <td>RDW-CV</td>
+            <td class="text-center">-</td>
+            <td class="text-center">9.0-18.0</td>
+            <td class="text-center">%</td>
+          </tr>
+          <tr>
+            <td>血小板分佈寬度</td>
+            <td class="text-center">-</td>
+            <td class="text-center">9-17</td>
+            <td class="text-center">fL</td>
+          </tr>
+          <tr>
+            <td>血小板壓積</td>
+            <td class="text-center">-</td>
+            <td class="text-center">0.15-0.3</td>
+            <td class="text-center">%</td>
+          </tr>
+          <tr>
+            <td>血小板平均壓積</td>
+            <td class="text-center">-</td>
+            <td class="text-center">9-13</td>
+            <td class="text-center">fL</td>
+          </tr>
+          <tr>
+            <td>大型血小板比率</td>
+            <td class="text-center">-</td>
+            <td class="text-center">13-43</td>
+            <td class="text-center">%</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
   <footer>
-    <div class="page-number">3</div>
+    <div class="page-number">20</div>
   </footer>
 </page>
