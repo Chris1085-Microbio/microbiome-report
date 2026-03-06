@@ -1,4 +1,4 @@
-.p33-content {
+.p32-content {
   position: relative;
   z-index: 1;
   display: flex;
@@ -7,7 +7,7 @@
   padding-right: 80px;
 }
 
-.p33-header {
+.p32-header {
   padding: 28px 50px 0;
 
   .page-breadcrumb {
@@ -17,21 +17,16 @@
   }
 }
 
-.p33-body {
+.p32-body {
   padding: 16px 50px 0;
   display: flex;
-  flex-direction: column;
   gap: 20px;
-}
-
-.p33-main {
-  display: flex;
-  gap: 20px;
+  flex: 1;
   min-height: 0;
   overflow: hidden;
 }
 
-.p33-text-col {
+.p32-text-col {
   flex: 1;
   min-width: 0;
   display: flex;
@@ -39,35 +34,25 @@
   gap: 20px;
 }
 
-.p33-text {
+.p32-text {
   font-size: 20px;
+  font-weight: normal;
   color: #333;
   line-height: 1.6;
 }
 
-.p33-img-col {
+.p32-img-col {
   width: 140px;
   flex-shrink: 0;
   display: flex;
   align-items: flex-start;
+  padding-top: 8px;
   overflow: hidden;
 
   img {
     width: 100%;
-    max-height: 300px;
+    max-height: 400px;
     object-fit: contain;
     object-position: top;
-  }
-}
-
-.p33-diagram {
-  margin-right: -50px;
-  display: flex;
-  justify-content: center;
-
-  img {
-    width: 75%;
-    height: auto;
-    object-fit: contain;
   }
 }
