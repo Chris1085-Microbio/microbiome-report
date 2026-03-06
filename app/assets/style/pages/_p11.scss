@@ -1,35 +1,118 @@
-.cards-container {
-  background-color: $page-background-color;
+.p11-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-right: 80px;
+}
 
-  .card {
-    background-color: $page-background-color;
-    border: none;
-  }
+.p11-header {
+  padding: 28px 50px 0;
 
-  .card-img-top {
-    width: 180px;
-    height: 180px;
-  }
-
-  .card-title {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 24px;
-  }
-  .card-text {
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 24px;
-  }
-
-  .card-body {
-    padding: 0.5rem;
+  .page-breadcrumb {
+    font-size: 18px;
+    color: #000;
+    letter-spacing: 2px;
   }
 }
 
-.enterotype-table {
-  td {
-    font-size: 1.2rem;
-    line-height: 2rem;
+.p11-body {
+  padding: 24px 20px 24px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.p11-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1a7a8a;
+}
+
+.p11-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #28bad4;
+
+  th {
+    background-color: #28bad4;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 14px 20px;
+    text-align: center;
+
+    &:first-child {
+      width: 25%;
+    }
   }
+
+  td {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding: 16px 16px;
+    vertical-align: middle;
+    background-color: #fff;
+    line-height: 1.5;
+  }
+}
+
+.p11-table-type {
+  text-align: center;
+  font-size: 28px !important;
+  font-weight: 900 !important;
+  color: black !important;
+}
+
+.p11-cards {
+  display: flex;
+  gap: 16px;
+}
+
+.p11-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+}
+
+.p11-card-label {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.p11-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.p11-card-species {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.p11-card p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.7;
+  text-align: justify;
+  margin: 0;
 }
