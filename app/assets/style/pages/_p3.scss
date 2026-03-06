@@ -1,58 +1,94 @@
-.bg-p3 {
-  background-image: url('../../assets/images/3.png');
-}
-
-.field {
-  border-bottom: 1px solid #000;
-}
-
-.profile-list {
-  .list-item {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    span {
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    span:first-child {
-      padding-right: 1rem;
-    }
-  }
-}
-
-.profile-page {
+.p3-content {
   position: relative;
-  height: 20rem;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-right: 80px;
+}
 
-  .profile-container {
-    position: absolute;
-    width: calc(100% - 40px);
-    top: -1rem;
-    left: 20px;
-    border: 6px double #000;
-    padding-left: 20px;
-    padding-right: 20px;
-    // margin-left: 20px;
-    // margin-right: 20px;
-    padding-top: 1rem;
-    z-index: -1;
+.p3-header {
+  padding: 28px 50px 0;
+
+  .page-breadcrumb {
+    font-size: 18px;
+    color: #000;
+    letter-spacing: 2px;
   }
 }
 
-.profile-text-container {
-  margin-top: 4rem;
+.p3-body {
+  padding: 20px 50px 0;
 }
 
-.customer-title {
-  z-index: 2;
-  .page-title-container {
-    z-index: 2;
+.p3-card {
+  border: 3px solid #1a9aaa;
+  border-radius: 20px;
+  padding: 20px 28px 24px;
+  margin-bottom: 24px;
+  background: #fff;
+}
+
+.p3-card-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1a9aaa;
+  letter-spacing: 6px;
+  text-align: center;
+  display: block;
+  padding: 8px 0;
+  line-height: 1.4;
+}
+
+.p3-profile-grid {
+  display: flex;
+  gap: 32px;
+}
+
+.p3-profile-col {
+  flex: 1;
+}
+
+.p3-profile-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.p3-list-item {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px 0 6px;
+
+  .p3-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    flex-shrink: 0;
+    width: 90px;
+    display: inline-block;
+    text-align: justify;
+    text-align-last: justify;
+  }
+
+  .p3-field {
+    flex: 1;
+    border-bottom: 1px solid #555;
+    margin-left: 8px;
+    min-height: 22px;
+    color: #333;
   }
 }
 
-// .customer-text {
-//   font-size: 1.2rem;
-//   line-height: 1.8rem;
-// }
+.p3-customer-section {
+  padding-top: 20px;
+}
+
+.p3-customer-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1a9aaa;
+  letter-spacing: 3px;
+  display: block;
+  text-align: left;
+}
