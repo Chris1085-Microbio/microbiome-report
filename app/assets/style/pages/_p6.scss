@@ -1,81 +1,151 @@
-.summary {
+// 覆蓋 p6 的 tab 位置，往上移
+.p6-tab {
+  top: 28px;
+}
+
+.p6-content {
   position: relative;
-  color: #555555;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-right: 80px;
 }
 
-.summary-left,
-.summary-right {
-  border: 3px solid $light-yellow;
-  border-radius: 1rem;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  background-color: rgba(249, 218, 120, 0.1);
+.p6-header {
+  padding: 28px 50px 0;
+
+  .page-breadcrumb {
+    font-size: 18px;
+    color: #000;
+    letter-spacing: 2px;
+  }
 }
 
-.summaryNoti-img {
-  position: absolute;
-  width: 300px;
-  height: 220px;
-  left: 40px;
-  bottom: 45px;
-  z-index: -1;
+.p6-body {
+  padding: 16px 50px 0;
 }
 
-.summary-text {
-  font-size: 1.75rem;
-  line-height: 2.75rem;
+.p6-greeting {
+  font-size: 17px;
   font-weight: bold;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  margin-top: 20px;
 }
 
-.summary-title {
-  font-size: 2rem;
+.p6-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 16px;
+  margin-left: -50px;
 }
 
-.summary-list {
-  color: rgb(85, 85, 85);
+.p6-section {
+  display: flex;
+  align-items: center;
+  background-color: #ddf0f4;
+  padding: 20px 0 20px 16px;
+  gap: 16px;
+  overflow: visible;
+  margin-right: 50px;
+}
 
-  .list-item {
-    display: block;
-    width: 100%;
-    font-size: 1.3rem;
+.p6-section-label {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 28px;
+  font-weight: bold;
+  color: #1a7a8a;
+  letter-spacing: 6px;
+  line-height: 1;
+  flex-shrink: 0;
+  align-self: center;
+  padding-left: 60px;
+}
+
+.p6-result-list {
+  flex: 1;
+  list-style: none;
+  padding-right: 60px;
+  margin: 0;
+
+  li {
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 0.7rem;
-    margin-top: 0.7rem;
+    color: #333;
+    padding: 8px 0;
+    text-align: right;
   }
 }
 
-.summary-list:nth-child(1) {
-  letter-spacing: 0.25rem;
+.p6-status--low {
+  color: #e53935;
+  font-weight: bold;
+  min-width: 170px;
 }
 
-.summaryScore-container {
-  .list-item {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
+.p6-status--normal {
+  color: #f0a030;
+  font-weight: bold;
+  min-width: 170px;
+}
 
-  .commit,
-  .colorBox {
-    font-size: 1.25rem;
-    line-height: 2.5rem;
-    height: 2.5rem;
-  }
+.p6-status--good {
+  color: #1a9aaa;
+  font-weight: bold;
+  min-width: 170px;
+}
 
-  .list-item:nth-child(1) {
-    .colorBox {
-      background-color: rgb(255, 90, 90);
+.p6-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+  position: relative;
+  right: -20px;
+}
+
+.p6-legend-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px 12px 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  transform: skewX(-10deg);
+  min-width: 170px;
+
+  span {
+    display: inline-block;
+    transform: skewX(10deg);
+
+    &:first-child {
+      flex: 1;
+      text-align: right;
+      padding-right: 12px;
     }
   }
 
-  .list-item:nth-child(2) {
-    .colorBox {
-      background-color: rgb(255, 232, 101);
-    }
+  &--low {
+    background-color: #e53935;
   }
 
-  .list-item:nth-child(3) {
-    .colorBox {
-      background-color: rgb(86, 230, 86);
-    }
+  &--normal {
+    background-color: #f0a030;
   }
+
+  &--good {
+    background-color: #1a9aaa;
+  }
+}
+
+.p6-noti {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.8;
+  margin-top: 20px;
 }
