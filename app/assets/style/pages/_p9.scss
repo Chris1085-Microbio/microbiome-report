@@ -1,34 +1,83 @@
-.fb-table {
-  width: 100%;
-  border: 1px solid #000;
+.p9-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-right: 80px;
+}
 
-  th,
-  td {
-    font-size: 1.2rem;
-    line-height: 2.4rem;
-  }
+.p9-header {
+  padding: 28px 50px 0;
 
-  th {
-    background-color: black;
-    color: white;
+  .page-breadcrumb {
+    font-size: 18px;
+    color: #000;
+    letter-spacing: 2px;
   }
 }
 
-.comment-container {
-  position: relative;
-  padding-top: 1.5rem !important;
-  border: 5px double #000;
-  border-radius: 10px;
+.p9-body {
+  padding: 24px 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
 
-  .commentTitle {
-    display: block;
-    position: absolute;
-    top: -1.7rem;
-    left: 1.5rem;
-    padding: 0.5rem;
-    font-size: 1.5rem;
+.p9-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.p9-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1a7a8a;
+}
+
+.p9-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #28bad4;
+
+  th {
+    background-color: #28bad4;
+    color: #fff;
+    font-size: 17px;
     font-weight: bold;
-    text-indent: 0;
-    background-color: white;
+    padding: 8px 12px;
+    text-align: center;
   }
+
+  td {
+    font-size: 17px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 12px;
+    text-align: center;
+    background-color: #fff;
+  }
+}
+
+.p9-comment {
+  border: 1px solid #555;
+
+  p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+    font-weight: bold;
+    margin: 0;
+    padding: 12px 16px;
+  }
+}
+
+.p9-comment-title {
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #444;
+  padding: 6px 12px;
+  text-align: center;
 }
