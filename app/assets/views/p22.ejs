@@ -1,109 +1,72 @@
 <page size="A4">
-  <%- include('../ejs/logo.ejs') %>
+  <div class="page-bg-v2">
+    <img src="./assets/images_v2/2內頁.jpg" alt="" />
+  </div>
 
-  <div class="d-flex flex-column align-items-center">
-    <div class="mt-8 w-100">
-      <div class="col-12 page-title-container mb-5">
-        <h3 class="page-title">4.1 腦功能健康指數</h3>
-        <div class="parallelogram mr-2"></div>
-        <div class="parallelogram mr-5"></div>
-      </div>
+  <div class="page-tab-v2 page-tab-v2-top28">身體功能評估</div>
+
+  <div class="bf-content">
+    <div class="bf-header">
+      <span class="page-breadcrumb">指數說明</span>
     </div>
 
-    <div class="page-container">
-      <div class="risk-container d-flex justify-content-around">
-        <div class="indexBtn-container p-1">
-          <div class="indexBtn text-center p-2 bg-white fw-bold">
-            <span>8 分</span>
-            <span class="d-block">低度風險</span>
+    <div class="bf-body mt-5">
+      <div class="bf-top-row mt-5">
+        <div class="bf-top-left">
+          <h2 class="bf-title">心血管功能風險說明</h2>
+          <div class="bf-risk mt-3">
+            <p class="text-indent">
+              腸道菌叢會將紅肉中的肉鹼代謝成三甲胺，並經由肝臟酵素生成危險因子-氧化三甲胺。此化合物會促進發炎細胞堆積在血管壁，增加血小板凝集導致血管粥狀動脈硬化及血栓形成。同時腸道菌叢失衡會影響膽酸代謝，膽固醇合成增加，誘發心血管疾病。
+            </p>
+            <p class="text-indent mt-4">相關疾病為：高血壓、高血脂、心肌梗塞等。</p>
           </div>
         </div>
-
-        <div class="riskImg-container d-flex align-items-center">
-          <img src="./assets/images/low.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/low.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/low.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/low.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/low.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/low.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/low.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/low.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/normal.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/normal.png" alt="" class="riskImg mx-1" />
+        <div class="bf-thermometer">
+          <img src="./assets/images_v2/數值圖3.png" alt="風險指數" />
         </div>
       </div>
-      <div class="w-100 d-flex justify-content-end mt-2">
-        <img src="./assets/images/22.png" alt="" class="functionFigure" />
-      </div>
-      <h4 class="py-1 px-2 pageSubtitle"><i class="far fa-hand-point-right mr-1"></i>風險說明</h4>
-      <div class="riskExplain-container">
-        <p class="text-indent mt-4">
-          腸腦軸線是消化道與腦神經系統雙向溝通的路徑。腸道微菌叢會藉由代謝產物或透過免疫細胞分泌的激素與中樞神經對話。因此腸道微菌叢失衡會直接影響大腦功能及認知行為，誘發大腦神經退化。
-        </p>
-        <p class="text-indent fw-bold text-dark">相關疾病為:阿茲海默症、失智症、帕金森氏症等。</p>
-      </div>
 
-      <div class="bacteria-container mt-4 d-flex flex-column">
-        <div class="bacteriaTitle-container d-flex justify-content-center">
-          <h4 class="py-1 pr-2 pl-6 goodBacteriaTitle text-center">關鍵好菌</h4>
-          <h4 class="py-1 pr-2 pl-6 badBacteriaTitle text-center">關鍵壞菌</h4>
+      <div class="bf-bacteria-overlay">
+        <img src="./assets/images_v2/數值圖4.png" alt="關鍵好壞菌" />
+
+        <div class="bf-bact-slot bf-bact-good-1">
+          <span class="bf-item-name">艾克曼嗜黏蛋白菌</span>
+          <span class="bf-item-sci">(Akkermansia muciniphila)</span>
+          <span class="bf-item-desc">促進腸道粘膜免疫力與障蔽功能、調節代謝與菌叢平衡。</span>
+        </div>
+        <div class="bf-bact-slot bf-bact-good-2">
+          <span class="bf-item-name">腸桿菌屬</span>
+          <span class="bf-item-sci">(Intestinibacter)</span>
+          <span class="bf-item-desc">改善心血管疾病的關鍵細菌，與血脂及發炎呈現負相關。</span>
+        </div>
+        <div class="bf-bact-slot bf-bact-good-3">
+          <span class="bf-item-name">腸道羅斯拜瑞氏菌</span>
+          <span class="bf-item-sci">(Roseburia intestinalis)</span>
+          <span class="bf-item-desc">促進調節性T細胞功能、腸道免疫平衡與減少脂肪堆積。</span>
         </div>
 
-        <div class="bacteriaList-container d-flex justify-content-between">
-          <ul class="goodBacteriaList col-6 p-2 mt-3">
-            <li class="list-item text-end">
-              <span class="d-block">艾克曼嗜黏蛋白菌 </span>
-              <span class="d-block font-italic">(Akkermansia muciniphila) </span>
-              <span class="d-block">促進腸道粘膜免疫力與障蔽功能、調節代謝與菌叢平衡。 </span>
-
-              <div class="bacteriaScore-container text-center">
-                <span class="bacteriaScore">偏低</span>
-              </div>
-            </li>
-            <li class="list-item text-end">
-              <span class="d-block">普氏棲糞桿菌 </span>
-              <span class="d-block font-italic">(Faecalibacterium prausnitzii) </span>
-              <span class="d-block">促進短鏈脂肪酸生成、提供腸道細胞能量，抑制壞菌。 </span>
-              <div class="bacteriaScore-container text-center">
-                <span class="bacteriaScore">一般</span>
-              </div>
-            </li>
-            <li class="list-item text-end">
-              <span class="d-block">雙叉桿菌屬 </span>
-              <span class="d-block font-italic">(Bifidobacterium) </span>
-              <span class="d-block">促進調節性T細胞功能、腸道免疫平衡與減少脂肪堆積。 </span>
-              <div class="bacteriaScore-container text-center">
-                <span class="bacteriaScore">一般</span>
-              </div>
-            </li>
-          </ul>
-          <ul class="badBacteriaList col-6 p-2 mt-3">
-            <li class="list-item text-start">
-              <span class="d-block">牙齦卟啉菌 </span>
-              <span class="d-block font-italic">(Porphyromonas gingivalis) </span>
-              <span class="d-block">牙周病菌，產生毒性物質使神經病變，造成神經退化。 </span>
-              <div class="bacteriaScore-container text-center">
-                <span class="bacteriaScore">偏低</span>
-              </div>
-            </li>
-            <li class="list-item text-start">
-              <span class="d-block">克雷伯氏菌屬 </span>
-              <span class="d-block font-italic">(Klebsiella) </span>
-              <span class="d-block">產生內毒素，造成全身慢性發炎。 </span>
-              <div class="bacteriaScore-container text-center">
-                <span class="bacteriaScore">偏低</span>
-              </div>
-            </li>
-            <li class="list-item text-start">
-              <span class="d-block">加德納菌屬 </span>
-              <span class="d-block font-italic">(Gardnerella) </span>
-              <span class="d-block">神經退化疾病關鍵菌。 </span>
-              <div class="bacteriaScore-container text-center">
-                <span class="bacteriaScore">一般</span>
-              </div>
-            </li>
-          </ul>
+        <div class="bf-bact-slot bf-bact-bad-1 bad">
+          <span class="bf-item-name">埃格特菌屬</span>
+          <span class="bf-item-sci">(Eggerthella)</span>
+          <span class="bf-item-desc">製造三甲胺，使血管病變、血脂上升及血管阻塞。</span>
         </div>
+        <div class="bf-bact-slot bf-bact-bad-2 bad">
+          <span class="bf-item-name">柯林斯菌屬</span>
+          <span class="bf-item-sci">(Collinsella)</span>
+          <span class="bf-item-desc">製造三甲胺，使血管病變、血脂上升及血管阻塞。</span>
+        </div>
+        <div class="bf-bact-slot bf-bact-bad-3 bad">
+          <span class="bf-item-name">活潑瘤胃球菌</span>
+          <span class="bf-item-sci">(Ruminococcus gnavus)</span>
+          <span class="bf-item-desc">腸道炎症關鍵菌，導致腸道損傷與發炎。</span>
+        </div>
+
+        <div class="bf-score-dot good bf-score-g1">偏低</div>
+        <div class="bf-score-dot good bf-score-g2">一般</div>
+        <div class="bf-score-dot good bf-score-g3">一般</div>
+        <div class="bf-score-dot bad bf-score-b1">偏高</div>
+        <div class="bf-score-dot bad bf-score-b2">偏高</div>
+        <div class="bf-score-dot bad bf-score-b3">一般</div>
       </div>
     </div>
   </div>

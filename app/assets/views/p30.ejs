@@ -1,109 +1,75 @@
 <page size="A4">
-  <%- include('../ejs/logo.ejs') %>
+  <div class="page-bg-v2">
+    <img src="./assets/images_v2/2內頁.jpg" alt="" />
+  </div>
 
-  <div class="d-flex flex-column align-items-center">
-    <div class="mt-8 w-100">
-      <div class="col-12 page-title-container mb-5">
-        <h3 class="page-title">4.9 肥胖健康指數</h3>
-        <div class="parallelogram mr-2"></div>
-        <div class="parallelogram mr-5"></div>
-      </div>
+  <div class="page-tab-v2 page-tab-v2-top28">身體功能評估</div>
+
+  <div class="bf-content">
+    <div class="bf-header">
+      <span class="page-breadcrumb">指數說明</span>
     </div>
 
-    <div class="page-container">
-      <div class="risk-container d-flex justify-content-around">
-        <div class="indexBtn-container p-1">
-          <div class="indexBtn text-center p-2 bg-white fw-bold">
-            <span>5 分</span>
-            <span class="d-block">中度風險</span>
+    <div class="bf-body mt-5">
+      <div class="bf-top-row mt-5">
+        <div class="bf-top-left">
+          <h2 class="bf-title">代謝功能風險說明</h2>
+          <div class="bf-risk mt-3">
+            <p class="text-indent">
+              代謝症候群與第二型糖尿病息息相關。健康人的腸道菌叢透過短鏈脂肪酸（丁酸），維持腸道屏障，減少胰島素阻抗。當腸道菌叢失衡，丁酸減少，丙酸咪唑增加，導致腸道屏障受損，使微生物內毒素進入全身循環導致慢性炎症及胰島素阻抗，引發高血糖。
+            </p>
+            <p class="text-indent mt-4">
+              相關疾病：代謝症候群
+              (腹部肥胖、高血壓、高血糖、高密度脂蛋白膽固醇、高三酸甘油脂)、第二型糖尿病、脂肪肝等。
+            </p>
           </div>
         </div>
-
-        <div class="riskImg-container d-flex align-items-center">
-          <img src="./assets/images/medium.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/medium.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/medium.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/medium.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/medium.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/normal.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/normal.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/normal.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/normal.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/normal.png" alt="" class="riskImg mx-1" />
+        <div class="bf-thermometer">
+          <img src="./assets/images_v2/數值圖3.png" alt="風險指數" />
         </div>
       </div>
-      <div class="w-100 d-flex justify-content-end mt-2">
-        <img src="./assets/images/22.png" alt="" class="functionFigure" />
-      </div>
-      <h4 class="py-1 px-2 pageSubtitle"><i class="far fa-hand-point-right mr-1"></i>風險說明</h4>
-      <div class="riskExplain-container">
-        <p class="text-indent mt-4">
-          蔬菜、水果、全穀物富含膳食纖維，腸道菌叢可代謝膳食纖維成短鏈脂肪酸。短鏈脂肪酸除了提供腸道細胞養分外，能增加棕色脂肪細胞，加速能量代謝，並促進腸道激素(腸泌素)釋放，穩定血糖。高脂高糖飲食影響腸道菌叢生態，導致血液及脂肪組織發炎物質升高，促使肥胖相關細菌繁衍，影響體重。
-        </p>
-        <p class="text-indent fw-bold text-dark">相關疾病：高血壓、第二型糖尿病、脂肪肝、動脈硬化等。</p>
-      </div>
 
-      <div class="bacteria-container mt-4 d-flex flex-column">
-        <div class="bacteriaTitle-container d-flex justify-content-center">
-          <h4 class="py-1 pr-2 pl-6 goodBacteriaTitle text-center">關鍵好菌</h4>
-          <h4 class="py-1 pr-2 pl-6 badBacteriaTitle text-center">關鍵壞菌</h4>
+      <div class="bf-bacteria-overlay">
+        <img src="./assets/images_v2/數值圖4.png" alt="關鍵好壞菌" />
+
+        <div class="bf-bact-slot bf-bact-good-1">
+          <span class="bf-item-name">艾克曼嗜黏蛋白菌</span>
+          <span class="bf-item-sci">(Akkermansia muciniphila)</span>
+          <span class="bf-item-desc">促進腸道粘膜免疫力與障蔽功能、調節代謝與菌叢平衡。</span>
+        </div>
+        <div class="bf-bact-slot bf-bact-good-2">
+          <span class="bf-item-name"> 直腸真桿菌</span>
+          <span class="bf-item-sci">(Eubacterium rectale)</span>
+          <span class="bf-item-desc">增強腸粘膜屏障功能。</span>
+        </div>
+        <div class="bf-bact-slot bf-bact-good-3">
+          <span class="bf-item-name">腸道羅斯拜瑞氏菌</span>
+          <span class="bf-item-sci">(Roseburia intestinalis)</span>
+          <span class="bf-item-desc">促進調節性T細胞功能、腸道免疫平衡與減少脂肪堆積。</span>
         </div>
 
-        <div class="bacteriaList-container d-flex justify-content-between">
-          <ul class="goodBacteriaList col-6 p-2 mt-3">
-            <li class="list-item text-end">
-              <span class="d-block">艾克曼嗜黏蛋白菌 </span>
-              <span class="d-block font-italic">(Akkermansia muciniphila) </span>
-              <span class="d-block">促進腸道粘膜免疫力與障蔽功能、調節代謝與菌叢平衡。 </span>
-
-              <div class="bacteriaScore-container text-center">
-                <span class="bacteriaScore">偏低</span>
-              </div>
-            </li>
-            <li class="list-item text-end">
-              <span class="d-block">腸道羅斯拜瑞氏菌 </span>
-              <span class="d-block font-italic">(Roseburia intestinalis) </span>
-              <span class="d-block">促進調節性T細胞功能、腸道免疫平衡與減少脂肪堆積。 </span>
-              <div class="bacteriaScore-container text-center">
-                <span class="bacteriaScore">一般</span>
-              </div>
-            </li>
-            <li class="list-item text-end">
-              <span class="d-block">長雙叉桿菌 </span>
-              <span class="d-block font-italic">(Bifidobacterium longum) </span>
-              <span class="d-block">促進調節性T細胞功能、腸道免疫平衡與減少脂肪堆積。 </span>
-              <div class="bacteriaScore-container text-center">
-                <span class="bacteriaScore">一般</span>
-              </div>
-            </li>
-          </ul>
-          <ul class="badBacteriaList col-6 p-2 mt-3">
-            <li class="list-item text-start">
-              <span class="d-block">普通擬桿菌 </span>
-              <span class="d-block font-italic">(Bacteroides vulgatus) </span>
-              <span class="d-block">肝臟纖維化上升指標菌，膽汁酸代謝異常及造成發炎。 </span>
-              <div class="bacteriaScore-container text-center">
-                <span class="bacteriaScore">偏低</span>
-              </div>
-            </li>
-            <li class="list-item text-start">
-              <span class="d-block">閃爍梭菌 </span>
-              <span class="d-block font-italic">(Clostridium scindens) </span>
-              <span class="d-block">高脂飲食導致此菌增生，造成肝臟發炎與纖維化。 </span>
-              <div class="bacteriaScore-container text-center">
-                <span class="bacteriaScore">一般</span>
-              </div>
-            </li>
-            <li class="list-item text-start">
-              <span class="d-block">污泥梭菌 </span>
-              <span class="d-block font-italic">(Clostridium sordellii) </span>
-              <span class="d-block">高脂飲食導致此菌增生，造成肝臟發炎與纖維化。 </span>
-              <div class="bacteriaScore-container text-center">
-                <span class="bacteriaScore">一般</span>
-              </div>
-            </li>
-          </ul>
+        <div class="bf-bact-slot bf-bact-bad-1 bad">
+          <span class="bf-item-name">活潑瘤胃球菌</span>
+          <span class="bf-item-sci">(Ruminococcus gnavus)</span>
+          <span class="bf-item-desc">腸道炎症生物指標菌，導致腸道損傷與發炎。</span>
         </div>
+        <div class="bf-bact-slot bf-bact-bad-2 bad">
+          <span class="bf-item-name">緩慢愛格氏菌</span>
+          <span class="bf-item-sci">(Eggerthella lenta)</span>
+          <span class="bf-item-desc">產生丙酸咪唑，造成胰島素阻抗，導致醣類代謝異常。</span>
+        </div>
+        <div class="bf-bact-slot bf-bact-bad-3 bad">
+          <span class="bf-item-name">沃氏嗜膽菌</span>
+          <span class="bf-item-sci">(Bilophila wadsworthia)</span>
+          <span class="bf-item-desc">造成脂肪代謝異常、全身性發炎。</span>
+        </div>
+
+        <div class="bf-score-dot good bf-score-g1">偏低</div>
+        <div class="bf-score-dot good bf-score-g2">一般</div>
+        <div class="bf-score-dot good bf-score-g3">一般</div>
+        <div class="bf-score-dot bad bf-score-b1">偏低</div>
+        <div class="bf-score-dot bad bf-score-b2">一般</div>
+        <div class="bf-score-dot bad bf-score-b3">一般</div>
       </div>
     </div>
   </div>

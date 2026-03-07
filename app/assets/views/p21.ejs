@@ -1,13 +1,85 @@
 <page size="A4">
-  <!-- <%- include('../ejs/title-logo.ejs') %> -->
-  <%- include('../ejs/logo.ejs') %>
+  <div class="page-bg-v2">
+    <img src="./assets/images_v2/2內頁.jpg" alt="" />
+  </div>
 
-  <div class="d-flex flex-column align-items-center">
-    <div class="titleBoxUpper bg-black w-100"></div>
-    <div class="titleBox bg-black w-100">
-      <h3 class="title-page-text text-center fw-bold text-white w-100">身體功能評估</h3>
+  <div class="page-tab-v2 page-tab-v2-top28">身體功能評估</div>
+
+  <div class="bf-content">
+    <div class="bf-header">
+      <span class="page-breadcrumb">指數說明</span>
     </div>
-    <div class="titleBoxBottom bg-black w-100"></div>
+
+    <div class="bf-body mt-5">
+      <!-- 標題 + 風險說明（左）/ 溫度計（右）-->
+      <div class="bf-top-row mt-5">
+        <div class="bf-top-left">
+          <h2 class="bf-title">腦功能風險說明</h2>
+          <div class="bf-risk mt-3">
+            <p class="text-indent">
+              腸腦軸線是消化道與腦神經系統雙向溝通的路徑。腸道微菌叢會藉由代謝產物或透過免疫細胞分泌的激素與中樞神經對話。因此腸道微菌叢失衡會直接影響大腦功能及認知行為，誘發大腦神經退化。
+            </p>
+            <p class="text-indent mt-4">相關疾病為：阿茲海默症、失智症、帕金森氏症等。</p>
+          </div>
+        </div>
+        <div class="bf-thermometer">
+          <img src="./assets/images_v2/數值圖3.png" alt="風險指數" />
+        </div>
+      </div>
+
+      <!-- 好壞菌模板圖：文字疊入槽位，分數疊在圓圈上 -->
+      <div class="bf-bacteria-overlay">
+        <img src="./assets/images_v2/數值圖4.png" alt="關鍵好壞菌" />
+
+        <!-- 好菌文字 slot 1 -->
+        <div class="bf-bact-slot bf-bact-good-1">
+          <span class="bf-item-name">艾克曼嗜黏蛋白菌</span>
+          <span class="bf-item-sci">(Akkermansia muciniphila)</span>
+          <span class="bf-item-desc">促進腸道粘膜免疫力與障蔽功能、調節代謝與菌叢平衡。</span>
+        </div>
+        <!-- 好菌文字 slot 2 -->
+        <div class="bf-bact-slot bf-bact-good-2">
+          <span class="bf-item-name">普氏棲糞桿菌</span>
+          <span class="bf-item-sci">(Faecalibacterium prausnitzii)</span>
+          <span class="bf-item-desc">促進短鏈脂肪酸生成、提供腸道細胞能量，抑制壞菌。</span>
+        </div>
+        <!-- 好菌文字 slot 3 -->
+        <div class="bf-bact-slot bf-bact-good-3">
+          <span class="bf-item-name">雙叉桿菌屬</span>
+          <span class="bf-item-sci">(Bifidobacterium)</span>
+          <span class="bf-item-desc">促進調節性T細胞功能、腸道免疫平衡與減少脂肪堆積。</span>
+        </div>
+
+        <!-- 壞菌文字 slot 1 -->
+        <div class="bf-bact-slot bf-bact-bad-1 bad">
+          <span class="bf-item-name">牙齦卟啉菌</span>
+          <span class="bf-item-sci">(Porphyromonas gingivalis)</span>
+          <span class="bf-item-desc">牙周病菌，產生毒性物質使神經病變，造成神經退化。</span>
+        </div>
+        <!-- 壞菌文字 slot 2 -->
+        <div class="bf-bact-slot bf-bact-bad-2 bad">
+          <span class="bf-item-name">孿生球菌屬</span>
+          <span class="bf-item-sci">(Gemella)</span>
+          <span class="bf-item-desc">神經退化疾病關鍵菌。</span>
+        </div>
+        <!-- 壞菌文字 slot 3 -->
+        <div class="bf-bact-slot bf-bact-bad-3 bad">
+          <span class="bf-item-name">加德納菌屬</span>
+          <span class="bf-item-sci">(Gardnerella)</span>
+          <span class="bf-item-desc">神經退化疾病關鍵菌。</span>
+        </div>
+
+        <!-- 好菌分數圓圈 -->
+        <div class="bf-score-dot good bf-score-g1">偏低</div>
+        <div class="bf-score-dot good bf-score-g2">一般</div>
+        <div class="bf-score-dot good bf-score-g3">一般</div>
+
+        <!-- 壞菌分數圓圈 -->
+        <div class="bf-score-dot bad bf-score-b1">偏低</div>
+        <div class="bf-score-dot bad bf-score-b2">偏低</div>
+        <div class="bf-score-dot bad bf-score-b3">一般</div>
+      </div>
+    </div>
   </div>
 
   <footer>
