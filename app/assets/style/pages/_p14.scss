@@ -1,6 +1,55 @@
-.bg-p14 {
-  width: 75%;
-  height: 75%;
+.p14-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-right: 80px;
+}
+
+.p14-header {
+  padding: 28px 50px 0;
+
+  .page-breadcrumb {
+    font-size: 18px;
+    color: #000;
+    letter-spacing: 2px;
+  }
+}
+
+.p14-body {
+  padding: 8px 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.p14-chart {
+  display: flex;
+  flex-direction: column; // 改成直向
+  align-items: center; // 置中
+
+  img {
+    width: 100%;
+    height: auto;
+
+    &:last-child {
+      margin-top: -44px;
+    }
+  }
+}
+
+.p14-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1a7a8a;
+}
+
+.p14-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.6;
 }
 
 .image-container {

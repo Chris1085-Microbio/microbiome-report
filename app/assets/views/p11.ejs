@@ -1,58 +1,66 @@
 <page size="A4">
-  <%- include('../ejs/logo.ejs') %>
+  <div class="page-bg-v2">
+    <img src="./assets/images_v2/2內頁.jpg" alt="" />
+  </div>
 
-  <div class="d-flex flex-column align-items-center">
-    <div class="mt-8 w-100">
-      <div class="col-12 page-title-container mb-5">
-        <h3 class="page-title">1.6 腸型分析</h3>
-        <div class="parallelogram mr-2"></div>
-        <div class="parallelogram mr-5"></div>
-      </div>
+  <div class="page-tab-v2 page-tab-v2-top28">腸道健康分析</div>
+
+  <div class="p11-content">
+    <div class="p11-header">
+      <span class="page-breadcrumb">1.6 腸型分析</span>
     </div>
 
-    <div class="mb-5 page-container">
-      <h4 class="py-1 px-2 pageSubtitle"><i class="fas fa-table mr-1"></i>檢測結果</h4>
-      <table class="fb-table my-4 enterotype-table">
-        <th class="col-3 text-center">檢測數值</th>
-        <th class="col-9 text-center">結果分析</th>
-        <tr>
-          <td class="text-center align-middle"><h4>腸型I</h4></td>
-          <td class="text-justify p-2">
-            您的結果屬於腸型I，腸道內優勢物種為擬桿菌屬(Bacteroides)，您的飲食習慣可能偏向肉類，高脂肪高蛋白攝取型態。
-          </td>
-        </tr>
+    <div class="p11-body mt-3">
+      <h2 class="p11-title">檢測結果</h2>
+
+      <table class="p11-table mb-3">
+        <thead>
+          <tr>
+            <th>檢測數值</th>
+            <th>結果分析</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p11-table-type">腸型1</td>
+            <td>
+              您的結果屬於腸型1，腸道內優勢物種為擬桿菌屬（Bacteroides），您的飲食習慣可能偏向肉類，高脂肪高蛋白攝取型態。
+            </td>
+          </tr>
+        </tbody>
       </table>
-      <h4 class="py-1 px-2 pageSubtitle"><i class="far fa-hand-point-right mr-1"></i>檢測說明</h4>
-      <div class="cards-container d-flex justify-content-between mt-4">
-        <div class="card col-4 d-flex flex-column align-items-center">
-          <h5 class="text-center my-2 fw-bold">腸型1</h5>
-          <img src="./assets/images/Gut_mod-1.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h6 class="card-title text-center w-100">擬桿菌Bacteroides</h6>
-            <p class="card-text ls-1">
-              此類人群，飲食傾向高脂肪及高蛋白攝取，腸道中富含擬桿菌，較易分解碳水化合物及蛋白質來獲取所需能量，此類人群較不易肥胖。
+
+      <h2 class="p11-title">檢測說明</h2>
+
+      <div class="p11-cards">
+        <div class="p11-card">
+          <div class="p11-card-label">腸型1</div>
+          <img src="./assets/images/Gut_mod-1.png" alt="腸型1" />
+          <div class="p11-card-body">
+            <div class="p11-card-species">擬桿菌 Bacteroides</div>
+            <p>
+              此類人群，飲食中富含脂肪及蛋白質來獲取所需能量，較易分解碳水化合物及蛋白質，飲食傾向高脂肪及高蛋白攝取。
             </p>
           </div>
         </div>
-        <div class="card col-4 d-flex flex-column align-items-center">
-          <h5 class="text-center my-2 fw-bold">腸型2</h5>
-          <img src="./assets/images/Gut_mod-2.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h6 class="card-title text-center w-100">普氏菌 Prevotella</h6>
-            <p class="card-text ls-1">
-              此類人群，飲食傾向高纖維食物攝取，腸道中富含普氏菌
-              ，導致腸道黏液分解，腸道防護力下降，較易有腸道疼痛不適的狀況。
+
+        <div class="p11-card">
+          <div class="p11-card-label">腸型2</div>
+          <img src="./assets/images/Gut_mod-2.png" alt="腸型2" />
+          <div class="p11-card-body">
+            <div class="p11-card-species">普氏菌 Prevotella</div>
+            <p>
+              此類人群，飲食傾向高纖維食物攝取，腸道中富含普氏菌，導致腸道黏液分解，腸道防護力下降，較易有腸道疼痛不適的狀況。
             </p>
           </div>
         </div>
-        <div class="card col-4 d-flex flex-column align-items-center">
-          <h5 class="text-center my-2 fw-bold">腸型3</h5>
-          <img src="./assets/images/Gut_mod-3.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h6 class="card-title text-center w-100">瘤胃球菌Ruminococcus</h6>
-            <p class="card-text ls-1">
-              此類腸型人群其腸道中富含瘤胃球菌，瘤胃球菌較易吸收糖分，此類腸型人群較容易增重。
-            </p>
+
+        <div class="p11-card">
+          <div class="p11-card-label">腸型3</div>
+          <img src="./assets/images/Gut_mod-3.png" alt="腸型3" />
+          <div class="p11-card-body">
+            <div class="p11-card-species">瘤胃球菌 Ruminococcus</div>
+            <p>此類腸型人群其腸道中富含瘤胃球菌，瘤胃球菌較易吸收糖分，此類腸型人群較容易增重。</p>
           </div>
         </div>
       </div>

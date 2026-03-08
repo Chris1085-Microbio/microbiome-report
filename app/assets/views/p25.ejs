@@ -1,109 +1,72 @@
 <page size="A4">
-  <%- include('../ejs/logo.ejs') %>
+  <div class="page-bg-v2">
+    <img src="./assets/images_v2/2內頁.jpg" alt="" />
+  </div>
 
-  <div class="d-flex flex-column align-items-center">
-    <div class="mt-8 w-100">
-      <div class="col-12 page-title-container mb-5">
-        <h3 class="page-title">4.4 肝功能健康指數</h3>
-        <div class="parallelogram mr-2"></div>
-        <div class="parallelogram mr-5"></div>
-      </div>
+  <div class="page-tab-v2 page-tab-v2-top28">身體功能評估</div>
+
+  <div class="bf-content">
+    <div class="bf-header">
+      <span class="page-breadcrumb">指數說明</span>
     </div>
 
-    <div class="page-container">
-      <div class="risk-container d-flex justify-content-around">
-        <div class="indexBtn-container p-1">
-          <div class="indexBtn text-center p-2 bg-white fw-bold">
-            <span>6 分</span>
-            <span class="d-block">中度風險</span>
+    <div class="bf-body mt-5">
+      <div class="bf-top-row mt-5">
+        <div class="bf-top-left">
+          <h2 class="bf-title">腎功能風險說明</h2>
+          <div class="bf-risk mt-3">
+            <p class="text-indent">
+              飲食中蛋白質經特定腸道菌叢分解後，經由肝臟代謝產生尿毒素，包含硫酸吲哚酚及對甲酚硫。兩者皆與慢性腎臟病之病程發展有高度相關。因此當腸道菌叢失衡所衍生之毒素經由腸壁上皮細胞吸收進入血液循環，亦可能增加腎臟負擔。
+            </p>
+            <p class="text-indent mt-4">相關疾病為：急性腎損傷、高血壓、腎結石、腎功能不佳、腎小球發炎。</p>
           </div>
         </div>
-
-        <div class="riskImg-container d-flex align-items-center">
-          <img src="./assets/images/medium.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/medium.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/medium.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/medium.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/medium.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/medium.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/normal.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/normal.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/normal.png" alt="" class="riskImg mx-1" />
-          <img src="./assets/images/normal.png" alt="" class="riskImg mx-1" />
+        <div class="bf-thermometer">
+          <img src="./assets/images_v2/數值圖3.png" alt="風險指數" />
         </div>
       </div>
-      <div class="w-100 d-flex justify-content-end mt-2">
-        <img src="./assets/images/22.png" alt="" class="functionFigure" />
-      </div>
-      <h4 class="py-1 px-2 pageSubtitle"><i class="far fa-hand-point-right mr-1"></i>風險說明</h4>
-      <div class="riskExplain-container">
-        <p class="text-indent mt-4">
-          腸肝軸線是消化道與肝臟雙向溝通的管道，匯集飲食、遺傳和環境因素的影響，將腸道菌叢的代謝產物透過肝門靜脈直接運輸至肝臟；肝臟也會透過膽汁影響腸道。因此腸道菌叢失衡會直接影響腸黏膜及屏障功能，增加微生物和毒素於肝臟堆積，增加肝臟的負擔。
-        </p>
-        <p class="text-indent fw-bold text-dark">相關疾病為:脂肪肝、肝炎、肝功能異常等。</p>
-      </div>
 
-      <div class="bacteria-container mt-4 d-flex flex-column">
-        <div class="bacteriaTitle-container d-flex justify-content-center">
-          <h4 class="py-1 pr-2 pl-6 goodBacteriaTitle text-center">關鍵好菌</h4>
-          <h4 class="py-1 pr-2 pl-6 badBacteriaTitle text-center">關鍵壞菌</h4>
+      <div class="bf-bacteria-overlay">
+        <img src="./assets/images_v2/數值圖4.png" alt="關鍵好壞菌" />
+
+        <div class="bf-bact-slot bf-bact-good-1">
+          <span class="bf-item-name">艾克曼嗜黏蛋白菌</span>
+          <span class="bf-item-sci">(Akkermansia muciniphila)</span>
+          <span class="bf-item-desc">促進腸道粘膜免疫力與障蔽功能、調節代謝與菌叢平衡。</span>
+        </div>
+        <div class="bf-bact-slot bf-bact-good-2">
+          <span class="bf-item-name">雙叉桿菌屬</span>
+          <span class="bf-item-sci">(Bifidobacterium)</span>
+          <span class="bf-item-desc">促進調節性T細胞功能、腸道免疫平衡與減少脂肪堆積。</span>
+        </div>
+        <div class="bf-bact-slot bf-bact-good-3">
+          <span class="bf-item-name">真桿菌屬</span>
+          <span class="bf-item-sci">(Eubacterium)</span>
+          <span class="bf-item-desc">增強腸粘膜屏障功能。</span>
         </div>
 
-        <div class="bacteriaList-container d-flex justify-content-between">
-          <ul class="goodBacteriaList col-6 p-2 mt-3">
-            <li class="list-item text-end">
-              <span class="d-block">艾克曼嗜黏蛋白菌 </span>
-              <span class="d-block font-italic">(Akkermansia muciniphila) </span>
-              <span class="d-block">促進腸道粘膜免疫力與障蔽功能、調節代謝與菌叢平衡。 </span>
-
-              <div class="bacteriaScore-container text-center">
-                <span class="bacteriaScore">偏低</span>
-              </div>
-            </li>
-            <li class="list-item text-end">
-              <span class="d-block">霍氏真桿菌 </span>
-              <span class="d-block font-italic">(FEubacterium hallii) </span>
-              <span class="d-block">促進短鏈脂肪酸生成、增強腸粘膜屏障功能。 </span>
-              <div class="bacteriaScore-container text-center">
-                <span class="bacteriaScore">一般</span>
-              </div>
-            </li>
-            <li class="list-item text-end">
-              <span class="d-block">腸道羅斯拜瑞氏菌 </span>
-              <span class="d-block font-italic">(Roseburia intestinalis) </span>
-              <span class="d-block">促進調節性T細胞功能、腸道免疫平衡與減少脂肪堆積。 </span>
-              <div class="bacteriaScore-container text-center">
-                <span class="bacteriaScore">一般</span>
-              </div>
-            </li>
-          </ul>
-          <ul class="badBacteriaList col-6 p-2 mt-3">
-            <li class="list-item text-start">
-              <span class="d-block">克雷伯氏肺炎菌 </span>
-              <span class="d-block font-italic">(Klebsiella pneumoniae) </span>
-              <span class="d-block">造成脂肪肝、脂肪性肝炎與酒精性肝炎。 </span>
-              <div class="bacteriaScore-container text-center">
-                <span class="bacteriaScore">一般</span>
-              </div>
-            </li>
-            <li class="list-item text-start">
-              <span class="d-block">閃爍梭菌 </span>
-              <span class="d-block font-italic">(Klebsiella pneumonia) </span>
-              <span class="d-block">高脂飲食導致此菌增生，造成肝臟發炎與纖維化。 </span>
-              <div class="bacteriaScore-container text-center">
-                <span class="bacteriaScore">一般</span>
-              </div>
-            </li>
-            <li class="list-item text-start">
-              <span class="d-block">污泥梭菌 </span>
-              <span class="d-block font-italic">(Clostridium sordellii) </span>
-              <span class="d-block">高脂飲食導致此菌增生，造成肝臟發炎與纖維化。 </span>
-              <div class="bacteriaScore-container text-center">
-                <span class="bacteriaScore">一般</span>
-              </div>
-            </li>
-          </ul>
+        <div class="bf-bact-slot bf-bact-bad-1 bad">
+          <span class="bf-item-name">扭鏈瘤胃球菌</span>
+          <span class="bf-item-sci">(Ruminococcus torques)</span>
+          <span class="bf-item-desc">腸道失衡關鍵菌，使腸黏膜屏障功能降低。</span>
         </div>
+        <div class="bf-bact-slot bf-bact-bad-2 bad">
+          <span class="bf-item-name">活潑瘤胃球菌</span>
+          <span class="bf-item-sci">(Ruminococcus gnavus)</span>
+          <span class="bf-item-desc">腸道炎症關鍵菌，導致腸道損傷與發炎。</span>
+        </div>
+        <div class="bf-bact-slot bf-bact-bad-3 bad">
+          <span class="bf-item-name">產甲酸草酸桿菌</span>
+          <span class="bf-item-sci">(Oxalobacter formigenes)</span>
+          <span class="bf-item-desc">導致腎結石之關鍵壞菌。</span>
+        </div>
+
+        <div class="bf-score-dot good bf-score-g1">偏低</div>
+        <div class="bf-score-dot good bf-score-g2">一般</div>
+        <div class="bf-score-dot good bf-score-g3">一般</div>
+        <div class="bf-score-dot bad bf-score-b1">偏高</div>
+        <div class="bf-score-dot bad bf-score-b2">一般</div>
+        <div class="bf-score-dot bad bf-score-b3">一般</div>
       </div>
     </div>
   </div>
