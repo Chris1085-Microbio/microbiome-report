@@ -36,15 +36,7 @@
   gap: 8px;
 
   img {
-    &:first-child {
-      flex: 7;
-      width: 0;
-    }
-
-    &:last-child {
-      flex: 3;
-      width: 0;
-    }
+    width: 100%;
   }
 }
 

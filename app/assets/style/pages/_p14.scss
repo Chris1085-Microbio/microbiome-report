@@ -26,12 +26,16 @@
 
 .p14-chart {
   display: flex;
-  justify-content: center;
+  flex-direction: column; // 改成直向
+  align-items: center; // 置中
 
   img {
-    width: 80%;
+    width: 100%;
     height: auto;
-    object-fit: contain;
+
+    &:last-child {
+      margin-top: -44px;
+    }
   }
 }
 
