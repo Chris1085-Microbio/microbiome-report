@@ -5,6 +5,7 @@
   flex-direction: column;
   height: 100%;
   padding-right: 80px;
+  overflow: hidden;
 }
 
 .p4-header {
@@ -18,41 +19,51 @@
 }
 
 .p4-body {
-  padding: 80px 50px 0;
+  padding: 80px 50px 120px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .p4-grid {
   display: flex;
-  gap: 32px;
+  gap: 28px;
+  flex: 1;
 }
 
 .p4-col {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
 .p4-block {
   background-color: #d4eef2;
-  padding: 12px 16px;
-  margin-bottom: 28px;
+  padding: 24px 16px;
+
+  &:last-child {
+    flex: 1;
+  }
 }
 
 .p4-section-title {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 36px;
+  font-weight: 900;
   color: #1a9aaa;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
   margin-bottom: 18px;
   margin-top: 18px;
 }
 
 .p4-list {
   list-style: none;
-  padding: 0;
+  padding: 12px 0px;
   margin: 0;
 
   li {
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 400;
     color: #333;
     line-height: 1.7;
     padding: 2px 0;
