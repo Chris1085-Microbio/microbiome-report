@@ -44,11 +44,21 @@ page[size='A5'][layout='landscape'] {
   height: 14.8cm;
 }
 
+@page {
+  margin: 0;
+  size: 21cm 29.7cm;
+}
+
 @media print {
   body,
   page {
     margin: 0;
-    box-shadow: 0;
+    box-shadow: none;
+    background: white;
+  }
+
+  page {
+    margin-bottom: 0;
   }
 }
 
