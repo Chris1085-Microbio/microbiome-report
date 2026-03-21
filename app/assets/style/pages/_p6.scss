@@ -28,7 +28,7 @@
 
 .p6-greeting {
   font-size: 17px;
-  font-weight: bold;
+  font-weight: 400;
   color: #333;
   line-height: 1.8;
   margin-bottom: 16px;
@@ -57,7 +57,7 @@
   writing-mode: vertical-rl;
   text-orientation: upright;
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 900;
   color: #1a7a8a;
   letter-spacing: 6px;
   line-height: 1;
@@ -74,7 +74,7 @@
 
   li {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
     color: #333;
     padding: 8px 0;
     text-align: right;
@@ -83,19 +83,19 @@
 
 .p6-status--low {
   color: #e53935;
-  font-weight: bold;
+  font-weight: 700;
   min-width: 170px;
 }
 
 .p6-status--normal {
   color: #f0a030;
-  font-weight: bold;
+  font-weight: 700;
   min-width: 170px;
 }
 
 .p6-status--good {
   color: #1a9aaa;
-  font-weight: bold;
+  font-weight: 700;
   min-width: 170px;
 }
 
@@ -115,7 +115,7 @@
   padding: 12px 24px 12px 20px;
   color: #fff;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   transform: skewX(-10deg);
   min-width: 170px;
 
