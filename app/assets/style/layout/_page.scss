@@ -19,6 +19,8 @@ header {
 }
 
 .page-tab-v2 {
+  font-family: 'NotoSansTC', sans-serif;
+  font-weight: 500;
   position: absolute;
   top: 100px;
   right: 4px;
@@ -44,6 +46,8 @@ header {
 }
 
 .divider-title-v2 {
+  font-family: 'NotoSansTC', sans-serif;
+  font-weight: 900;
   position: absolute;
   bottom: 300px;
   left: 120px;
@@ -52,6 +56,7 @@ header {
   color: #333;
   letter-spacing: 4px;
   z-index: 1;
+  color: #3e3a39;
 }
 
 .page-bg-v2 {
@@ -71,12 +76,15 @@ header {
 }
 
 .page-number {
+  font-family: 'NotoSansTC', sans-serif;
+  font-weight: 500;
   position: absolute;
   top: $page-size-height - 50px;
   right: 60px;
   font-size: 16px;
   color: gray-500;
   z-index: 1;
+  color: #3e3a39;
 }
 
 .page-container {

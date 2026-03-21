@@ -11,18 +11,26 @@
   padding: 28px 50px 0;
 
   .page-breadcrumb {
+    font-family: 'NotoSansTC', sans-serif;
+    font-weight: 500;
     font-size: 18px;
-    color: #000;
+    color: #3e3a39;
     letter-spacing: 2px;
   }
 }
 
 .p2-body {
   padding: 40px 20px 40px 50px;
+
+  p {
+    font-family: 'NotoSansTC', sans-serif;
+    font-weight: 400;
+  }
 }
 
 .p2-title {
   font-size: 32px;
+  font-family: 'NotoSansTC', sans-serif;
   font-weight: 900;
   color: #1a9aaa;
   letter-spacing: 3px;
@@ -45,6 +53,7 @@
 
 .p2-subtitle {
   font-size: 32px;
+  font-family: 'NotoSansTC', sans-serif;
   font-weight: 900;
   color: #1a9aaa;
   letter-spacing: 3px;

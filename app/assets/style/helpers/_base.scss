@@ -1,3 +1,66 @@
+@font-face {
+  font-family: 'NotoSansTC';
+  src: url('../../fonts/NotoSansTC-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansTC';
+  src: url('../../fonts/NotoSansTC-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansTC';
+  src: url('../../fonts/NotoSansTC-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansTC';
+  src: url('../../fonts/NotoSansTC-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansTC';
+  src: url('../../fonts/NotoSansTC-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansTC';
+  src: url('../../fonts/NotoSansTC-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansTC';
+  src: url('../../fonts/NotoSansTC-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansTC';
+  src: url('../../fonts/NotoSansTC-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansTC';
+  src: url('../../fonts/NotoSansTC-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
 body {
   background: rgb(204, 204, 204);
   font-family: 'Noto Sans TC', sans-serif;
